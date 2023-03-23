@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_backgrounds",
+  "info": {
+    "singularName": "product-background",
+    "pluralName": "product-backgrounds",
+    "displayName": "ProductBackground",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "video": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "image1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "desc1": {
+      "type": "text"
+    },
+    "image2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "desc2": {
+      "type": "text"
+    },
+    "image3": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "product_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-detail.product-detail",
+      "mappedBy": "product_background"
+    },
+    "desc3": {
+      "type": "text"
+    }
+  }
+}
