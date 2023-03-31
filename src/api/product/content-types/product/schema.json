@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product"
+    "displayName": "Product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,9 @@
       "relation": "manyToOne",
       "target": "api::product-detail.product-detail",
       "inversedBy": "products"
+    },
+    "stock": {
+      "type": "decimal"
     }
   }
 }

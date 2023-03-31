@@ -4,38 +4,27 @@
   "info": {
     "singularName": "about-page",
     "pluralName": "about-pages",
-    "displayName": "AboutPage"
+    "displayName": "AboutPage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "text1": {
-      "type": "text"
+    "content": {
+      "type": "json"
     },
-    "image1": {
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "text2": {
-      "type": "text"
-    },
-    "image2": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }
