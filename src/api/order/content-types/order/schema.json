@@ -21,17 +21,19 @@
       "target": "plugin::users-permissions.user",
       "inversedBy": "orders"
     },
-    "packaging": {
-      "type": "string"
-    },
-    "date": {
-      "type": "datetime"
-    },
     "total": {
       "type": "biginteger"
     },
     "status": {
       "type": "string"
+    },
+    "packaging": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::packaging.packaging"
+    },
+    "address": {
+      "type": "json"
     }
   }
 }

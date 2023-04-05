@@ -69,11 +69,11 @@
       "target": "api::order.order",
       "mappedBy": "user"
     },
-    "addresses": {
+    "reviews": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::address.address",
-      "mappedBy": "user"
+      "target": "api::review.review",
+      "mappedBy": "users_permissions_user"
     }
   }
 }

@@ -44,6 +44,25 @@
       "relation": "oneToOne",
       "target": "api::product-background.product-background",
       "inversedBy": "product_detail"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "product_detail"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Sayur",
+        "Buah",
+        "Biji",
+        "Ternak",
+        "Umbi"
+      ]
+    },
+    "price": {
+      "type": "integer"
     }
   }
 }

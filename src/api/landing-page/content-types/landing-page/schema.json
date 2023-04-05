@@ -28,6 +28,9 @@
         "videos",
         "audios"
       ]
+    },
+    "whyus": {
+      "type": "json"
     }
   }
 }

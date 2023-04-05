@@ -15,9 +15,6 @@
     "harvested": {
       "type": "date"
     },
-    "price": {
-      "type": "integer"
-    },
     "product_detail": {
       "type": "relation",
       "relation": "manyToOne",
