@@ -34,6 +34,15 @@
     },
     "address": {
       "type": "json"
+    },
+    "resi": {
+      "type": "text"
+    },
+    "courier": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "string"
     }
   }
 }

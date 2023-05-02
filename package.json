@@ -10,12 +10,15 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@bn-digital/strapi-plugin-field-uuid": "^1.2.12",
     "@strapi/plugin-i18n": "4.5.5",
     "@strapi/plugin-users-permissions": "4.5.5",
     "@strapi/provider-upload-cloudinary": "4.5.5",
     "@strapi/strapi": "4.5.5",
     "better-sqlite3": "^8.2.0",
-    "pg": "8.8.0"
+    "pg": "8.8.0",
+    "uuid": "^9.0.0",
+    "uuidv4": "^6.2.13"
   },
   "author": {
     "name": "A Strapi developer"
