@@ -2,7 +2,8 @@ const { v4: uuidv4 } = require("uuid");
 
 module.exports = {
   beforeCreate(event) {
-    const { data, where, select, populate } = event.params;
+    const { data } = event.params;
+    console.log(data.uuid);
     data.uuid = uuidv4();
   },
 };
