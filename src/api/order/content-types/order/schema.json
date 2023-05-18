@@ -43,6 +43,9 @@
     },
     "uuid": {
       "type": "string"
+    },
+    "penerima": {
+      "type": "string"
     }
   }
 }
