@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "image": {
       "type": "media",
@@ -27,7 +28,8 @@
       ]
     },
     "sold": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "slug": {
       "type": "uid",
