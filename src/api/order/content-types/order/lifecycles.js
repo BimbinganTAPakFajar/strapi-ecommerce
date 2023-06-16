@@ -19,9 +19,17 @@ module.exports = {
     data.uuid = uuidv4();
   },
   async afterUpdate(event) {
-    const { data } = event.params;
+    const {
+      where: { id },
+      data,
+    } = event.params;
+    console.log(event.params, "PARAMS");
     if (data.status === "Pesanan Diproses") {
-      const amounts = getTotalAmount(data.cart);
+      const order = await strapi.entityService.findOne("api::order.order", id, {
+        populate: "*",
+      });
+      console.log("ORDER", order);
+      const amounts = getTotalAmount(order.cart);
       Object.keys(amounts).forEach(async (itemId) => {
         const product = await strapi.entityService.findOne(
           "api::product.product",
