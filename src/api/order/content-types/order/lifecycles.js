@@ -23,8 +23,8 @@ module.exports = {
       where: { id },
       data,
     } = event.params;
-    console.log(event.params, "PARAMS");
-    if (data.status === "Pesanan Diproses") {
+    console.log(event.params.populate, "POPULATE");
+    if (data.status === "Pesanan Diproses" && data.resi !== null) {
       const order = await strapi.entityService.findOne("api::order.order", id, {
         populate: "*",
       });
